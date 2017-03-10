@@ -1,3 +1,12 @@
+
+# Notes about work:
+# This is a drawn graph already provided for you. You need to Work with this.
+# Need to familiarize myself more with python.
+# Go over notes when doing work on this.
+# Ask for help about problems you encounter or amy specific think that you don't understad.
+
+
+
 # Import a library of functions called 'pygame'
 import pygame
 import graph as graphs
@@ -15,8 +24,8 @@ BLUE = (0, 0, 255)
 GREEN = (0, 255, 0)
 RED = (255, 0, 0)
 PAD = (5, 5)
-ROWS = 25
-COLS = 25
+ROWS = 10
+COLS = 10
 WIDTH = 30
 HEIGHT = 30
 SCREEN_WIDTH = COLS * (PAD[0] + WIDTH) + PAD[1]
@@ -31,6 +40,9 @@ for i in range(ROWS):
     for j in range(COLS):
         node = search_space.get_node([i, j])
         NODES.append(DrawableNode(node))
+        
+
+
 
 pygame.display.set_caption("Example code for the draw module")
 
